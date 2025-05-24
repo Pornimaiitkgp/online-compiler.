@@ -1,0 +1,97 @@
+/* client/src/App.css */
+.App {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+.controls select,
+.controls button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.controls button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.editor-container {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.input-output-container {
+    display: flex;
+    gap: 20px;
+}
+
+.input-section,
+.output-section {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.input-section h2,
+.output-section h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.input-section textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+.output-section pre {
+    white-space: pre-wrap; /* Preserves whitespace and wraps long lines */
+    word-wrap: break-word; /* Breaks long words */
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    overflow-x: auto; /* For very long lines that can't wrap */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #333;
+}
